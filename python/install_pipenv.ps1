@@ -1,5 +1,5 @@
 pip install --upgrade pip
-pip install pipenv
+pip install pipenv --user
 $pythonUserPath = python -m site --user-site
 $pythonUserPath = $pythonUserPath.Replace('site-packages', 'Scripts')
 $ENV:Path += ";" + $pythonUserPath
